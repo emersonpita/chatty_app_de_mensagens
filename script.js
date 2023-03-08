@@ -1,8 +1,12 @@
+window.sr = ScrollReveal({reset: true});
+
+sr.reveal(".text-section1, .text-section2, .card-section2, .text-section3, .central-container-section4, .text-section5, .faq", {duration: 1000});
+
 // Armazena os links do menu de navegação
 const navigationLinks = document.querySelectorAll(".item-menu");
 
 // Armazena as seções correspondentes a cada link do menu de navegação
-const sections = document.querySelectorAll('#inicio, #sobre, #tecnologia, #faq, #download');
+const sections = document.querySelectorAll('#inicio, #sobre, #tecnologia, #faq');
 
 // Adiciona o evento de rolagem na janela
 window.addEventListener('scroll', function() {
@@ -45,4 +49,13 @@ window.addEventListener('scroll', function() {
     } else {
       header.classList.remove('scroll');
     }
+});
+
+//Adiciona a classe "show" ao faq para abrir a resposta ao clicar na pergunta
+const faqs = document.querySelectorAll(".faq")
+
+faqs.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("show");
+  });
 });
