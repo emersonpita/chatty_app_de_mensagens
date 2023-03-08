@@ -244,6 +244,7 @@ header.scroll {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     padding-bottom: 10px;
+    visibility: hidden;
 }
 
 .text-section1 h1 {
