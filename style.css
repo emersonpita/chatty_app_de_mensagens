@@ -840,10 +840,6 @@ footer {
     color: #4A72FF;
 }
 
-.text-section1, .text-section2, .card-section2, .text-section3, .central-container-section4, .text-section5, .faq {
-    visibility: hidden;
-}
-
 @media (max-width: 1070px) {
 
     .logo {
