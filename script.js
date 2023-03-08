@@ -1,6 +1,6 @@
 window.sr = ScrollReveal({reset: true});
 
-sr.reveal(".text-section1, .text-section2, .card-section2, .text-section3, .central-container-section4, .text-section5, .faq", {duration: 1000});
+sr.reveal(".text-section1", {duration: 1000});
 
 // Armazena os links do menu de navegação
 const navigationLinks = document.querySelectorAll(".item-menu");
